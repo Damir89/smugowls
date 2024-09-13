@@ -32,7 +32,7 @@ const cardOptions = {
   italian: {
     card1: ["Chi", "Cosa"],
     card2and4: ["mangia", "beve", "segue", "è buono", "lega", "si schianta", "corre", "rovina", "si restringe", "si sforza", "sorprende", "fa musica", "dorme", "connette", "è equilibrato", "muore", "ha successo", "si sgola", "è ricco", "apre", "alleggerisce", "vola", "è fragile", "cattura", "cresce", "indossa", "ferisce", "morde", "pianifica", "brucia", "si arrampica", "invecchia", "è cat", "tiene", "è veloce", "contiene acqua", "è forte", "si torce", "si alza", "è complicato", "è silenzioso", "mente", "perde", "è lasciato indietro", "legge", "perde la cima", "rotola", "fallisce", "protegge", "si rompe", "ha un buco", "è commestibile", "è grande", "ha un confine", "è libero", "chiude", "esplode", "chiude asi ferma", "è affilato", "si oscura", "si muove", "è lento", "ha un cuore", "è chiaro", "leggia", "è economico", "ha sete", "è rumoroso", "è costoso", "è cal paura", "sembra sbagliato", "scorre", "inizia", "si siede", "brilla", "è figo", "è in ritardo", "cammina", "è inquietante", "è verde", "si frantuma", "ha bisogno di energia", "congela", "è bagnato", "sembra piccolo", "suona"],
-    card3: ["quando", "allora", "mentre", "finché", "se", "e mai", "e si spera", "e tristemente", "e a volte", "prima che", "dopo che", "e sempre", "e", "a meno che", "app", "perché", "ma"],
+    card3: ["quando", "allora", "mentre", "finché", "se", "e si spera", "e tristemente", "e a volte", "prima che", "dopo che", "e sempre", "e", "a meno che", "app", "perché", "ma", "e mai"],
   }
 };
 
