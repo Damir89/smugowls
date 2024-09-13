@@ -23,8 +23,19 @@ const cardOptions = {
     card1: ["Ko", "Šta"],
     card2and4: ["jede", "pije", "prati", "je dobro", "vezuje", "ruši se", "trči", "upropašćuje", "smanjuje se", "jako pokušava", "iznenađuje", "pravi muziku", "spava", "povezuje", "je uravnoteženo", "umire", "uspeva", "raspada se", "je bogato", "otvara", "postaje lakše", "leti", "je krhko", "hvata", "raste", "nosi", "povređuje", "ujeda", "planira", "gori", "penje se", "stari", "je katastrofalno", "drži", "je brzo", "sadrži vodu", "je jako", "uvija", "diže se", "je komplikovano", "je tiho", "laže", "gubi", "je ostavljeno", "čita", "gubi vrh", "kotrlja se", "ne uspeva", "štiti", "lomi se", "ima rupu", "je jestivo", "je veliko", "ima granicu", "je slobodno", "zatvara", "eksplodira", "zaključava", "zaustavlja", "je oštro", "postaje tamno", "kreće se", "je sporo", "ima srce", "je jasno", "pluta", "je jeftino", "je žedno", "je glasno", "je skupo", "pada", "je vruće", "je strašno", "oseća se pogrešno", "teče", "počinje", "sedi", "sija", "je kul", "kasni", "hoda", "je jezivo", "je zeleno", "razbija se", "treba struju", "mrzne", "je mokro", "izgleda malo", "zvoni"],
     card3: ["kada", "onda", "dok", "sve dok", "ako", "i nikad", "i nadajmo se", "i nažalost", "i ponekad", "pre nego što", "nakon što", "i uvek", "i", "osim ako", "čim", "zato što", "ali"],
+  },
+  japanese: {
+    card1: ["誰が", "何が"],
+    card2and4: ["食べる", "飲む", "従う", "良い", "縛る", "衝突する", "走る", "台無しにする", "縮む", "頑張る", "驚かる", "音楽を作る", "眠る", "つながる", "バランスが取れている", "死ぬ", "成功する", "崩壊する", "金持ちだ", "開く", "軽くなる", "飛ぶ", "壊れやすい", "捕まえる", "成長する", "着る", "傷つける", "", "計画する", "燃える", "登る", "年をとる", "壊滅的だ", "持つ", "速い", "水を含む", "強い", "ねじる", "上がる", "複雑だ", "静かだ", "嘘をつく", "失う", "取り残む", "頂を失う", "転がる", "失敗する", "保護する", "壊れる", "穴がある", "食べられる", "大きい", "境界がある", "自由だ", "閉じる", "爆発する", "ロックする", "止まる", "鋭い", "暗くなる", "動く", "遅い", "心がある", "明確だ", "浮く", "安い", "喉が渇いている", "うるさい", "高価", "落ちる", "熱い", "怖い", "間違っている感じがする", "流れる", "始まる", "座る", "光る", "かっこいい", "遅れ", "歩く", "不味だ", "緑色だ", "粉々になる", "電力が必要だ", "凍る", "濡れている", "小さく見える", "鳴る"],
+    card3: ["時", "そして", "間", "限り", "もし", "そして決して", "そして願わくば", "そして悲しいことに", "そしてときどき", "前に", "後に", "そしていつも", "そして", "ない限り", "すぐに", "なぜなら", "しかし"],
+  },
+  italian: {
+    card1: ["Chi", "Cosa"],
+    card2and4: ["mangia", "beve", "segue", "è buono", "lega", "si schianta", "corre", "rovina", "si restringe", "si sforza", "sorprende", "fa musica", "dorme", "connette", "è equilibrato", "muore", "ha successo", "si sgola", "è ricco", "apre", "alleggerisce", "vola", "è fragile", "cattura", "cresce", "indossa", "ferisce", "morde", "pianifica", "brucia", "si arrampica", "invecchia", "è cat", "tiene", "è veloce", "contiene acqua", "è forte", "si torce", "si alza", "è complicato", "è silenzioso", "mente", "perde", "è lasciato indietro", "legge", "perde la cima", "rotola", "fallisce", "protegge", "si rompe", "ha un buco", "è commestibile", "è grande", "ha un confine", "è libero", "chiude", "esplode", "chiude asi ferma", "è affilato", "si oscura", "si muove", "è lento", "ha un cuore", "è chiaro", "leggia", "è economico", "ha sete", "è rumoroso", "è costoso", "è cal paura", "sembra sbagliato", "scorre", "inizia", "si siede", "brilla", "è figo", "è in ritardo", "cammina", "è inquietante", "è verde", "si frantuma", "ha bisogno di energia", "congela", "è bagnato", "sembra piccolo", "suona"],
+    card3: ["quando", "allora", "mentre", "finché", "se", "e mai", "e si spera", "e tristemente", "e a volte", "prima che", "dopo che", "e sempre", "e", "a meno che", "app", "perché", "ma"],
   }
 };
+
 
 
 
@@ -118,11 +129,13 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-8 text-white text-center">🦉Smug Owls🦉</h1>
 
         <div className="mb-4 space-x-2">
-          <button onClick={() => changeLanguage('english')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">English</button>
-          <button onClick={() => changeLanguage('french')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Français</button>
-          <button onClick={() => changeLanguage('german')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Deutsch</button>
-          <button onClick={() => changeLanguage('serbian')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Српски</button>
-        </div>
+  <button onClick={() => changeLanguage('english')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">English</button>
+  <button onClick={() => changeLanguage('french')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Français</button>
+  <button onClick={() => changeLanguage('german')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Deutsch</button>
+  <button onClick={() => changeLanguage('serbian')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Српски</button>
+  <button onClick={() => changeLanguage('japanese')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">日本語</button>
+  <button onClick={() => changeLanguage('italian')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Italiano</button>
+</div>
 
         <div className="flex space-x-4 mb-8">
           {flippedCards.map((flipped, index) => (
