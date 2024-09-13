@@ -18,8 +18,8 @@
 
 .card-container {
   perspective: 1000px;
-  width: 150px;
-  height: 225px;
+  width: 400px;
+  height: 600px;
   cursor: pointer;
 }
 

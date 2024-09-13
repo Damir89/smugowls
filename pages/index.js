@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
+import { motion } from 'framer-motion'; // Import at the top
+
 
 const cardOptions = {
   english: {
@@ -24,6 +26,8 @@ const cardOptions = {
   }
 };
 
+
+
 export default function Home() {
   const [flippedCards, setFlippedCards] = useState([false, false, false, false]);
   const [cardImages, setCardImages] = useState([null, null, null, null]);
@@ -38,10 +42,10 @@ export default function Home() {
   }, [currentLanguage]);
 
   const fetchRandomImages = () => {
-    // Generate an array of image file names from 'image (1).jpg' to 'image (934).jpg'
-    const imageFiles = Array.from({ length: 934 }, (_, i) => `image (${i + 1}).jpg`);
+    // Generate an array of image file names from '1.jpg' to '934.jpg'
+    const imageFiles = Array.from({ length: 934 }, (_, i) => `${i + 1}.jpg`);
   
-    // Shuffle the array
+    // Shuffle array
     const shuffledImages = imageFiles.sort(() => 0.5 - Math.random());
   
     // Map the shuffled array to include the correct folder path
