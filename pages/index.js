@@ -119,8 +119,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-x p-8">
-      <Head>
+<div className="min-h-screen bg-gradient animate-gradient-x animate-pulse animate-rotate p-8">
+<Head>
         <title>Daily Question Game</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

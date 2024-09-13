@@ -3,17 +3,54 @@
 @tailwind utilities;
 
 @keyframes gradient-x {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
+  0% {
     background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
 .animate-gradient-x {
+  background-size: 200% 200%;
   animation: gradient-x 15s ease infinite;
-  background-size: 400% 400%;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    270deg,
+    #2f4f4f, /* Dark Slate Gray */
+    #296618, /* Green */
+    #1a5e36, /* Emerald */
+    #1d5479, /* Blue */
+    #511668, /* Purple */
+    #685715, /* Yellow */
+    #a75a17, /* Orange */
+    #722017, /* Red */
+    #2f4f4f  /* Dark Slate Gray (Repeat) */
+  );
+  background-size: 1600% 1600%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+   -position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate  {animation: gradientAnimation 30s ease infinite;
+}
+
+@media (max-width: 640px) {
+  .bg-gradient-to-r {
+    background: linear-gradient(to bottom, #004d00, #006600, #009900);
+  }
 }
 
 .card-container {
@@ -57,4 +94,39 @@
 
 .card-container.flipped .card {
   animation: spin 0.6s ease-out;
+}
+
+/* Media query for devices with a max width of 600px */
+@media (max-width: 600px) {
+  .card-container {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Space between cards */
+}
+
+.card-container {
+  perspective:1000px;
+  width: 400px;
+ height: 600px;
+  cursor: pointer;
+}
+
+/* Media query for devices with a max width of 600px */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+
+  .card-container {
+    width: 90%; /* Adjust width */
+    height: auto; /* Adjust height automatically */
+  }
 }
