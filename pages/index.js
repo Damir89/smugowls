@@ -37,15 +37,18 @@ export default function Home() {
     generateQuestion();
   }, [currentLanguage]);
 
-  const fetchRandomImages = async () => {
-    const newImages = await Promise.all(
-      Array(4).fill().map(() => 
-        fetch('/api/random-image')
-          .then(res => res.json())
-          .then(data => data.image)
-      )
-    );
-    setCardImages(newImages);
+  const fetchRandomImages = () => {
+    // Generate an array of image file names from 'image (1).jpg' to 'image (934).jpg'
+    const imageFiles = Array.from({ length: 934 }, (_, i) => `image (${i + 1}).jpg`);
+  
+    // Shuffle the array
+    const shuffledImages = imageFiles.sort(() => 0.5 - Math.random());
+  
+    // Map the shuffled array to include the correct folder path
+    const newImages = shuffledImages.map(image => `/images/${image}`);
+  
+    // Set the first 4 images (or however many you want)
+    setCardImages(newImages.slice(0, 4));
   };
 
   const generateQuestion = () => {
@@ -108,7 +111,7 @@ export default function Home() {
       </Head>
 
       <main className="container mx-auto flex flex-col items-center">
-        <h1 className="text-4xl font-bold mb-8 text-white text-center">Daily Question Game</h1>
+        <h1 className="text-4xl font-bold mb-8 text-white text-center">🦉Smug Owls🦉</h1>
 
         <div className="mb-4 space-x-2">
           <button onClick={() => changeLanguage('english')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">English</button>
