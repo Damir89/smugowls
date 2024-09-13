@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
-import { motion } from 'framer-motion'; // Import at the top
+
 
 
 const cardOptions = {
