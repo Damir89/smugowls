@@ -34,31 +34,6 @@ const cardOptions = {
     card2and4: ["mangia", "beve", "segue", "è buono", "lega", "si schianta", "corre", "rovina", "si restringe", "si sforza", "sorprende", "fa musica", "dorme", "connette", "è equilibrato", "muore", "ha successo", "si sgola", "è ricco", "apre", "alleggerisce", "vola", "è fragile", "cattura", "cresce", "indossa", "ferisce", "morde", "pianifica", "brucia", "si arrampica", "invecchia", "è cat", "tiene", "è veloce", "contiene acqua", "è forte", "si torce", "si alza", "è complicato", "è silenzioso", "mente", "perde", "è lasciato indietro", "legge", "perde la cima", "rotola", "fallisce", "protegge", "si rompe", "ha un buco", "è commestibile", "è grande", "ha un confine", "è libero", "chiude", "esplode", "chiude asi ferma", "è affilato", "si oscura", "si muove", "è lento", "ha un cuore", "è chiaro", "leggia", "è economico", "ha sete", "è rumoroso", "è costoso", "è cal paura", "sembra sbagliato", "scorre", "inizia", "si siede", "brilla", "è figo", "è in ritardo", "cammina", "è inquietante", "è verde", "si frantuma", "ha bisogno di energia", "congela", "è bagnato", "sembra piccolo", "suona"],
     card3: ["quando", "allora", "mentre", "finché", "se", "e si spera", "e tristemente", "e a volte", "prima che", "dopo che", "e sempre", "e", "a meno che", "app", "perché", "ma", "e mai"],
   }
-  spanish: {
-    card1: ["Quién", "Qué"],
-    card2and4: [ "come", "bebe", "sigue", "es bueno", "ata", "se estrella", "corre", 
-      "estropea", "encoge", "esfuerza", "sorpr", "h música", "duerme", 
-      "conecta", "es equilibrado", "muere", "tiene éxito", "se desmorona", 
-      "es rico", "abre", "aligera", "vuela", "es frágil", "captura", "crece", 
-      "lleva", "duele", "muerde", "planea", "quema", "sube", "envejece", 
-      "es catastrófico", "sostiene", "es rápido", "contiene agua", "es fuerte", 
-      "gira", "se eleva", "es complicado", "es silencioso", "miente", "pierde", 
-      "queda atrás", "lee", "pierde su cima", "rueda", "falla", "refugia", 
-      "rom", "tiene un agujero", "es comestible", "es grande", "tiene un límite", 
-      "es libre", "cierra", "explota", "bloquea", "se detiene", "es afado", 
-      "oscurece", "se mueve", "es lento", "tiene un corazón", "es claro", "es barato", "tiene sed", "es ruidoso", "es caro", "cae", 
-      "es caliente", "da miedo", "se siente mal", "fluye", "empieza", "se sienta", 
-      "brilla", "es genial", "llega tarde", "camina", "es espuznante", 
-      "es verde", "se rompe", "necesita energía", "se congela", "está mojado", 
-      "parece pequeño", "ena"
-    ],
-    card3: [
-      "cuando", "entonces", "mientras", "siempre que", "si", "y nunca", 
-      "y con suerte", "y tristemente", "y a veces", "antes", "después", "y siempre", 
-      "y", "a menos que", " pronto como", "porque", "pero"
-    ],
-  }
-
 };
 
 
@@ -160,8 +135,6 @@ export default function Home() {
   <button onClick={() => changeLanguage('serbian')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Српски</button>
   <button onClick={() => changeLanguage('japanese')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">日本語</button>
   <button onClick={() => changeLanguage('italian')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Italiano</button>
-  <button onClick={() => changeLanguage('spanish')} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Español</button>
-
 </div>
 
         <div className="flex space-x-4 mb-8">
